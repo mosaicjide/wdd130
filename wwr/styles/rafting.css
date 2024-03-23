@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --primary-color: #F8F1FF;
+  --secondary-color: #394648;
+  --accent1-color: #987284;
+  --accent2-color: #DECDF5;
+
+  --heading-font: 'roboto', sans-serif;
+  --paragraph-font: 'roboto', sans-serif;
+
+  --nav-background-color: #F8F1FF;
+  --nav-link-color: #394648;
+  --nav-hover-link-color: #987284;
+  --nav-hover-background-color: #DECDF5;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent2-color);
+}
+
+p {
+	padding:25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  padding: 1rem;}
+
+.sociallinks {
+	text-decoration: none;
+}
+
+.hero {
+	position: relative;
+}
+
+h1 {
+	position: absolute;
+	color: #fff;
+	align: center;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
