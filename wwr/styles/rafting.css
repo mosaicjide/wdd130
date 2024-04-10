@@ -28,17 +28,17 @@ div {
 
 div h1 {
 	position: absolute;
-	top: 47px;
-	left: 150px;
+	top: 150px;
+	left: 500px;
 	background-color: var(--nav-background-color);
 
 }
 
 article {
 	position: absolute;
-	top: 150px;
+	top: 250px;
 	left: 50px;
-	right: 200px;
+	right: 50px;
 	background-color: var(--nav-background-color);
 	padding: 10px;
 
@@ -52,7 +52,7 @@ article {
 
 body {
   font-family: var(--paragraph-font);
-  max-width: 960px;
+  max-width: 1200px;
   padding: 20px;
 }
 
@@ -64,6 +64,11 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 20px;
   background-color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: 120px 10fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1200px;
 }
 
 p {
@@ -71,16 +76,19 @@ p {
 }
 
 .nav1 {
-  background-color: var(--nav-background-color);
+  background-color: var(--accent2-color);
   font-size: 1.2rem;
   display: flex;
+  text-align: right;
+  list-style: none;
+  justify-content: space-evenly;
 }
 
 nav a {
   display: block;
   color: var(--nav-link-color);
   text-decoration: none;
-  padding: 1rem;
+  padding: 0;
 }
 
 nav a:link, nav a:visited {
@@ -106,16 +114,45 @@ footer {
 }
 
 .soc1 {
-	bottom: 3px;
-	left: 800px;
+	bottom: 10px;
+	left: 1100px;
 }
 
 .soc2 {
-	bottom: 3px;
-	left: 830px;
+	bottom: 10px;
+	left: 1130px;
 }
 
 .soc3 {
-	bottom: 3px;
-	left: 860px;
+	bottom: 10px;
+	left: 1160px;
+}
+
+header img {
+	margin: 0;
+	width: 120px;
+	height:auto;
+}
+
+.image-row, .facecard {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.image-row figure img {
+	width: 170px;
+	height: 80px;
+}
+
+.facecard figure img {
+	width: 70px;
+	height: 100px;
+}
+
+section h2, section h3 {
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
 }
